@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web RizFood</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/c03fa53857.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="sidebar">
+                <h2>Rizfood</h2>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-house-user"></i>Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-circle-info"></i>About</a></li>
+                    <li><a href="product.html"><i class="fas fa-utensils"></i>Product</a></li>
+                    <li><a href="login.php"><i class="fas fa-envelopes-bulk"></i>Recervation</a></li>
+                </ul> 
+                <div class="social_media">
+                    <a href="https://github.com/RizalAhmadMaulana"><i class="fab fa-github"></i></a>
+                    <a href="https://maps.app.goo.gl/wRbg4q37EzWzyVTv7"><i class="fa-solid fa-map-location-dot"></i></a>
+                    <a href="https://www.instagram.com/rizalram05/?next=%2F"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="main_content">
+                <div class="header">Welcome!! Have a nice day.</div>
+                <section id="about">
+                    <div class="loading-container">
+                        <div class="loading"></div>
+                    </div>  
+                    <div class="heading">
+                    <h1>Deskripsi <span style="color: red;">Produk</span></h1>
+                    </div>
+                    <div class="container-about">
+                    <div class="isi-about">
+                        <h2>Apa itu Nasi Kapau ?</h2>
+                        <p>
+                            Nasi Kapau adalah hidangan khas Minangkabau yang berasal dari daerah Kapau, Sumatra Barat, Indonesia. Hidangan 
+                            ini terkenal karena kelezatan dan keunikan bumbu-bumbunya. Nasi Kapau biasanya disajikan dengan lauk-pauk khas 
+                            Padang, seperti rendang, gulai ayam, sambal lado hijau, gulai nangka, ikan bakar, dan berbagai jenis masakan 
+                            Padang lainnya. Keistimewaan Nasi Kapau terletak pada penggunaan bumbu yang kaya, seperti santan kelapa, 
+                            rempah-rempah, dan bahan-bahan segar. Rendang, salah satu lauk utama, terbuat dari daging yang dimasak dengan 
+                            bumbu rempah-rempah hingga empuk dan berwarna kecoklatan. Sajian ini biasanya disajikan dalam porsi kecil di 
+                            atas nasi, menciptakan kombinasi rasa yang lezat dan beragam.
+                        </p>
+                        <button class="btn_kembali"><a href="product.html" style="color: white; text-decoration: none;">Kembali</a></button>
+                    </div>
+                    <div class="gambar-about">
+                        <img src="./img/kapau.jpg" alt="">
+                    </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <small> Copyright &copy; 2024 - Rizal Ahmad Maulana , All Rights Reserved.</small>
+            </div>
+        </footer>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+            // Simulate loading time
+            setTimeout(function () {
+                    hideLoading();
+                }, 3000); // Change the timeout value as needed
+            });
+      
+            function hideLoading() {
+                var loadingContainer = document.querySelector(".loading-container");
+                loadingContainer.style.display = "none";
+            }
+        </script>
+    </body>
+</html>

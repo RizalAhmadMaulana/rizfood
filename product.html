@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web RizFood</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c03fa53857.js" crossorigin="anonymous"></script>
+    <script src="./dist/sweetalert2.all.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <h2>Rizfood</h2>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-house-user"></i>Home</a></li>
+                <li><a href="about.html"><i class="fas fa-circle-info"></i>About</a></li>
+                <li><a href="product.html"><i class="fas fa-utensils"></i>Product</a></li>
+                <li><a href="login.php"><i class="fas fa-envelopes-bulk"></i>Recervation</a></li>
+            </ul> 
+            <div class="social_media">
+              <a href="https://github.com/RizalAhmadMaulana"><i class="fab fa-github"></i></a>
+              <a href="https://maps.app.goo.gl/wRbg4q37EzWzyVTv7"><i class="fa-solid fa-map-location-dot"></i></a>
+              <a href="https://www.instagram.com/rizalram05/?next=%2F"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="main_content">
+            <div class="header">Welcome!! Have a nice day.</div>
+              <section id="produk">
+                <div class="loading-container">
+                  <div class="loading"></div>
+                </div>
+                <div class="isi-produk">
+                  <p style="text-align: center; font-size: 40px; font-weight: bold; padding-top: 60px;">Our <span style="color: red;">Menu</span></p>
+                  <main class="grid">
+                    <article>
+                      <img src="./img/magelangan.jpeg" width="300px" height="300px" alt="">
+                      <div class="konten">
+                        <div class="judul">
+                          <p>Magelangan</p>
+                        </div>
+                        <div class="desc">
+                          <p>Harga = Rp 11.000</p>
+                        </div>
+                        <button type="button" id="btn_1"> <a style="color: white;" href="menu_1.html">Lihat Detail</a></button>
+                      </div>
+                    </article>
+                    <article>
+                      <img src="./img/nasi_bali.jpg" width="300px" height="300px" alt="">
+                      <div class="konten">
+                        <div class="judul">
+                          <p>Nasi Campur Bali</p>
+                        </div>
+                        <div class="desc">
+                          <p>Harga = Rp 12.000</p>
+                        </div>
+                        <button type="button" id="btn_1"> <a style="color: white;" href="menu_2.html">Lihat Detail</a></button>
+                      </div>
+                    </article>
+                    <article>
+                      <img src="./img/mie_dokdok.jpg" width="300px" height="300px" alt="">
+                      <div class="konten">
+                        <div class="judul">
+                          <p>Mie Dokdok</p>
+                        </div>
+                        <div class="desc">
+                          <p>Harga = Rp 14.000</p>
+                        </div>
+                        <button type="button" id="btn_1"> <a style="color: white;" href="menu_3.html">Lihat Detail</a></button>
+                      </div>
+                    </article>
+                    <article>
+                      <img src="./img/nasgor.jpg" width="300px" height="300px" alt="">
+                      <div class="konten">
+                        <div class="judul">
+                          <p>Nasi Goreng</p>
+                        </div>
+                        <div class="desc">
+                          <p>Harga = Rp 10.000</p>
+                        </div>
+                        <button type="button" id="btn_1"> <a style="color: white;" href="menu_4.html">Lihat Detail</a></button>
+                      </div>
+                    </article>
+                    <article>
+                      <img src="./img/orak_arik.jpg" width="300px" height="300px" alt="">
+                      <div class="konten">
+                        <div class="judul">
+                          <p>Nasi Orak Arik</p>
+                        </div>
+                        <div class="desc">
+                          <p>Harga = Rp 10.000</p>
+                        </div>
+                        <button type="button" id="btn_1"> <a style="color: white;" href="menu_5.html">Lihat Detail</a></button>
+                      </div>
+                    </article>
+                    <article>
+                      <img src="./img/omlet.jpg" width="300px" height="300px" alt="">
+                      <div class="konten">
+                        <div class="judul">
+                          <p>Nasi Omlet</p>
+                        </div>
+                        <div class="desc">
+                          <p>Harga = Rp 10.000</p>
+                        </div>
+                        <button type="button" id="btn_1"> <a style="color: white;" href="menu_6.html">Lihat Detail</a></button>
+                      </div>
+                    </article>
+                    <article>
+                      <img src="./img/taruko.jpg" width="300px" height="300px" alt="">
+                      <div class="konten">
+                        <div class="judul">
+                          <p>Nasi Taruko</p>
+                        </div>
+                        <div class="desc">
+                          <p>Harga = Rp 11.000</p>
+                        </div>
+                        <button type="button" id="btn_7">Lihat Detail</button>
+                        <script>
+                          const btn_7 = document.getElementById('btn_7');
+                          btn_7.addEventListener('click', function(){
+                            Swal.fire({
+                              title: "Detail Deskripsi",
+                              text: "Nasi Taruko adalah hidangan tradisional khas Jepang yang berasal dari Prefektur Nagano."
+                            })
+                          })
+                        </script>
+                      </div>
+                    </article>
+                    <article>
+                      <img src="./img/kapau.jpg" width="300px" height="300px" alt="">
+                      <div class="konten">
+                        <div class="judul">
+                          <p>Nasi Kapau</p>
+                        </div>
+                        <div class="desc">
+                          <p>Harga = Rp 14.000</p>
+                        </div>
+                        <button type="button" id="btn_8">Lihat Detail</button>
+                        <script>
+                          const btn_8 = document.getElementById('btn_8');
+                          btn_8.addEventListener('click', function(){
+                            Swal.fire({
+                              title: "Detail Deskripsi",
+                              text: "Nasi Kapau adalah hidangan khas Minangkabau yang berasal dari daerah Kapau, Sumatra Barat, Indonesia."
+                            })
+                          })
+                        </script>
+                      </div>
+                    </article>
+                    <article>
+                      <img src="./img/sarden.jpg" width="300px" height="300px" alt="">
+                      <div class="konten">
+                        <div class="judul">
+                          <p>Nasi Sarden</p>
+                        </div>
+                        <div class="desc">
+                          <p>Harga = Rp 13.000</p>
+                        </div>
+                        <button type="button" id="btn_9">Lihat Detail</button>
+                        <script>
+                          const btn_9 = document.getElementById('btn_9');
+                          btn_9.addEventListener('click', function(){
+                            Swal.fire({
+                              title: "Detail Deskripsi",
+                              text: "Nasi Sarden adalah hidangan yang menggabungkan nasi dengan saus sarden yang kaya rasa dan aroma."
+                            })
+                          })
+                        </script>
+                      </div>
+                    </article>
+                  </main>
+                </div>
+              </section>
+        </div>
+    </div>
+    <footer>
+      <div class="container">
+          <small> Copyright &copy; 2024 - Rizal Ahmad Maulana , All Rights Reserved.</small>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+      // Simulate loading time
+      setTimeout(function () {
+              hideLoading();
+          }, 3000); // Change the timeout value as needed
+      });
+
+      function hideLoading() {
+          var loadingContainer = document.querySelector(".loading-container");
+          loadingContainer.style.display = "none";
+      }
+  </script>
+  </body>
+</html>

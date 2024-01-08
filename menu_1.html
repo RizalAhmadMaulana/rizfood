@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web RizFood</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/c03fa53857.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="sidebar">
+                <h2>Rizfood</h2>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-house-user"></i>Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-circle-info"></i>About</a></li>
+                    <li><a href="product.html"><i class="fas fa-utensils"></i>Product</a></li>
+                    <li><a href="login.php"><i class="fas fa-envelopes-bulk"></i>Recervation</a></li>
+                </ul> 
+                <div class="social_media">
+                    <a href="https://github.com/RizalAhmadMaulana"><i class="fab fa-github"></i></a>
+                    <a href="https://maps.app.goo.gl/wRbg4q37EzWzyVTv7"><i class="fa-solid fa-map-location-dot"></i></a>
+                    <a href="https://www.instagram.com/rizalram05/?next=%2F"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="main_content">
+                <div class="header">Welcome!! Have a nice day.</div>
+                <section id="about">
+                    <div class="loading-container">
+                        <div class="loading"></div>
+                    </div>
+                    <div class="heading">
+                    <h1>Deskripsi <span style="color: red;">Produk</span></h1>
+                    </div>
+                    <div class="container-about">
+                    <div class="isi-about">
+                        <h2>Apa itu Magelangan ?</h2>
+                        <p>Burjo adalah sebuah tempat makan ramah kantong yang akan banyak kamu jumpai dibeberapa daerah 
+                            di Jawa Tengah dan Jogja. Khususnya saat kamu memilih Jogja sebagai destinasi wisatamu, Burjo 
+                            akan banyak kamu temukan disana. Salah satu menu andalan di Burjo yaitu Nasi Goreng Magelangan. 
+                            Biasa disebut Magelangan, makanan satu ini berisi nasi goreng bercampur mi goreng instan atau 
+                            campuran beberapa bahan seperti ayam, sosis dan lain sebagainya. Nasi Goreng Magelangan 
+                            memiliki aroma bumbu yang khas sehingga dapat membangkitkan selera siapa saja yang mencium aromanya.</p>
+                        <button class="btn_kembali"><a href="product.html" style="color: white; text-decoration: none;">Kembali</a></button>
+                    </div>
+                    <div class="gambar-about">
+                        <img src="./img/magelangan.jpeg" alt="">
+                    </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <small> Copyright &copy; 2024 - Rizal Ahmad Maulana , All Rights Reserved.</small>
+            </div>
+        </footer>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+            // Simulate loading time
+            setTimeout(function () {
+                    hideLoading();
+                }, 3000); // Change the timeout value as needed
+            });
+      
+            function hideLoading() {
+                var loadingContainer = document.querySelector(".loading-container");
+                loadingContainer.style.display = "none";
+            }
+        </script>
+    </body>
+</html>

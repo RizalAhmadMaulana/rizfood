@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web RizFood</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/c03fa53857.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="sidebar">
+                <h2>Rizfood</h2>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-house-user"></i>Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-circle-info"></i>About</a></li>
+                    <li><a href="product.html"><i class="fas fa-utensils"></i>Product</a></li>
+                    <li><a href="login.php"><i class="fas fa-envelopes-bulk"></i>Recervation</a></li>
+                </ul> 
+                <div class="social_media">
+                    <a href="https://github.com/RizalAhmadMaulana"><i class="fab fa-github"></i></a>
+                    <a href="https://maps.app.goo.gl/wRbg4q37EzWzyVTv7"><i class="fa-solid fa-map-location-dot"></i></a>
+                    <a href="https://www.instagram.com/rizalram05/?next=%2F"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="main_content">
+                <div class="header">Welcome!! Have a nice day.</div>
+                <section id="about">
+                    <div class="loading-container">
+                        <div class="loading"></div>
+                    </div>  
+                    <div class="heading">
+                    <h1>Deskripsi <span style="color: red;">Produk</span></h1>
+                    </div>
+                    <div class="container-about">
+                    <div class="isi-about">
+                        <h2>Apa itu Mie Dokdok ?</h2>
+                        <p>
+                            Mie Dokdok adalah hidangan mie khas Betawi yang terkenal dengan cita rasa yang khas dan unik. Disebut 
+                            "Dokdok" karena proses pembuatannya yang melibatkan suara dok-dok saat mie ini diolah. Mie Dokdok 
+                            biasanya terbuat dari mie kuning yang lebar dan tebal, disajikan dengan kuah kaldu yang gurih dan daging 
+                            sapi empuk yang diolah dengan bumbu khas Betawi. Keunikan Mie Dokdok terletak pada penggunaan daging sapi 
+                            yang diolah dengan cara tertentu sehingga menjadi lembut dan penuh dengan cita rasa rempah-rempah. 
+                            Selain itu, mie ini juga diberi tambahan kikil sapi, tauge, emping, dan seledri untuk menambahkan variasi 
+                            tekstur dan rasa pada hidangan.</p>
+                        <button class="btn_kembali"><a href="product.html" style="color: white; text-decoration: none;">Kembali</a></button>
+                    </div>
+                    <div class="gambar-about">
+                        <img src="./img/mie_dokdok.jpg" alt="">
+                    </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <small> Copyright &copy; 2024 - Rizal Ahmad Maulana , All Rights Reserved.</small>
+            </div>
+        </footer>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+            // Simulate loading time
+            setTimeout(function () {
+                    hideLoading();
+                }, 3000); // Change the timeout value as needed
+            });
+      
+            function hideLoading() {
+                var loadingContainer = document.querySelector(".loading-container");
+                loadingContainer.style.display = "none";
+            }
+        </script>
+    </body>
+</html>
